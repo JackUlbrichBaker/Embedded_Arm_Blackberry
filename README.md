@@ -11,6 +11,7 @@ The device should comfortably be able to run linux terminal and limited GUI.  It
 - a fully capable blackberry keyboard
 - IO avaliable to interface with UART/I2C/SPI devices
 - High resolution screen for usable terminal
+- Integrated RP2040 to handle keyboard and touch screen and report to cpu as a HID device -- this modular setup allows for easy testing of subcircuits
 
 # Inspiration
 This project would not be possible without this documentation detailing the Blackberry Q10 keyboard:
