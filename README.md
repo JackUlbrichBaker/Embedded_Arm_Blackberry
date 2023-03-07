@@ -11,7 +11,26 @@ The device should comfortably be able to run linux terminal and limited GUI.  It
 - a fully capable blackberry keyboard
 - IO avaliable to interface with UART/I2C/SPI devices
 - High resolution screen for usable terminal
+- A budget of no more than $75 AUD
 - Integrated RP2040 to handle keyboard and touch screen and report to cpu as a HID device -- this modular setup allows for easy testing of subcircuits
+
+# Potential MPUs
+
+ - Texas instruments AM6232ATCGGAALW 	1.4 GHz 4 core ARM Cortex A53 $36
+ - NXP i.MX6 SLL 1GHz single core ARM Cortex A9 $34
+ - Rockchip RK3568 Quad core ARM Coretec A55 1.8GHz $35  
+ - Rockchip RK3399 Dual-core Cortex-A72 1.8GHz Quad-core Cortex-A53 1.4GHz $53
+    - Open source !
+    - cheaper of the high performance MPUs
+    - USB C
+ - NXP i.MX 6Solo/6DualLite dual core ARM Cortex A9 $60
+ - Allwinner A33 ARM Cortex a7 $6.5
+    - AXP223 power management ic
+    - availiable ECAD Model
+    - very cheap
+
+# Display
+The choice of display will depend greatly on integrated hardware onboard the MPU, as some chips may not support certain displays.
 
 # Inspiration
 This project would not be possible without this documentation detailing the Blackberry Q10 keyboard:
