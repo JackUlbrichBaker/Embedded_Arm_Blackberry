@@ -15,10 +15,16 @@ The device should comfortably be able to run linux terminal and limited GUI.  It
 - Integrated RP2040 to handle keyboard and touch screen and report to cpu as a HID device -- this modular setup allows for easy testing of subcircuits
 
 # Potential MPUs
- - STM32MP153DAD1 800MHz dual core ARM Cortex A7 $30
+ - TI Sitara AM625 1.4GHz quad-core Arm Cortex-A53, PRU and M4 microcontroller $30
+    - Can base design off beaglebone
+    - open source
+    - existing linux support
+ - STM32MP135DAE7 Arm Cortex-A7 1GHz $16
+ - STM32MP157C 800MHz dual core ARM Cortex A7 $30
     - Very cool little chip
     - huge software support
-    - TFT display driver
+    - TFT/MIPI display driver
+    - 2x CAN channels
  - Texas instruments AM6232ATCGGAALW 	1.4 GHz 4 core ARM Cortex A53 $36
  - NXP i.MX6 SLL 1GHz single core ARM Cortex A9 $34
  - Rockchip RK3568 Quad core ARM Coretec A55 1.8GHz $35  
@@ -34,6 +40,10 @@ The device should comfortably be able to run linux terminal and limited GUI.  It
 
 # Display
 The choice of display will depend greatly on integrated hardware onboard the MPU, as some chips may not support certain displays.
+
+# Peripherals
+I can use a TCA8418E IC to allow for HID keyboard control over I2C with exisiting linux kernal support.
+Wifi can be done with a WL1807MOD transceiver or a NINA-W10x IC which both offer Wifi and BT with linux kernal support
 
 # Inspiration
 This project would not be possible without this documentation detailing the Blackberry Q10 keyboard:
